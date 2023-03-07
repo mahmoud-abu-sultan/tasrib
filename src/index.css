@@ -3,28 +3,98 @@ body {
   margin: 0;
   padding: 0;
   /* text-align: end; */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 :root {
-  --blueDark: #17135a;
-  --blueMid: #2b259b;
-  --blueLight: #2b259bd9;
-  --transitionColor: color 0.2s ease-out;
+  --blueDark: #0e1c42fa;
+  --blueMid: #252357;
+  --blueLight: #322d91d9;
+  --ramade: rgb(121, 121, 121);
+  --transitionColor: color 0.7s ease-out;
   --transitionBsckgroundColor: background-color 0.5s
     cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 /* ---------------- header */
-header{
-    width: 100%;
-    height: 40em;
-    background-image: url("../public/image/wallpaperbetter.com_2560x1440.jpg");
-    background-size: cover;
-    padding: 30px 0;
+header {
+  width: 100%;
+  height: 27em;
+  background-color: var(--blueDark);
+  background-image: url("../public/image/wallpaperbetter.com_2732x1536.jpg");
+  filter: grayscale(50%);
+  background-size: contain;
+  padding: 30px 0;
 }
-header >div{
-    background-color: var(--blueDark);
-    width: 40em;
-    height: 90%;
-    margin: 0 650px;
-    color: white;
+header > div {
+  background-color: var(--blueDark);
+  width: 35em;
+  height: 24.5em;
+  margin: 10px 40em;
+  padding: 10px 60px;
+  color: white;
+}
+header > div > h1 {
+  font-size: 65px;
+  font-weight: bold;
+  margin: 0;
+}
+header > div > h2 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 5px 0 15px 0;
+}
+header > div > ul {
+  margin: 0 -20px 0 0;
+}
+header > div li {
+  line-height: 35px;
+  font-size: 20px;
+  font-weight: 200;
+}
+header > div button {
+  width: 15em;
+  margin: 43px 150px 0 150px;
+  padding: 10px;
+  background-color: #0e1c4200;
+  border: 2px solid rgb(196, 196, 196);
+  border-radius: 20px;
+  font-size: medium;
+  font-weight: 600;
+  font-size: 17px;
+  color: white;
+  padding: 10px;
+  transition: var(--transitionBsckgroundColor);
+  transition: var(--transitionColor);
+}
+header > div button:hover {
+  color: var(--blueLight);
+  background-color: rgba(196, 196, 196, 0.808);
+}
+/* ---------------------------------- aboutWe_section*/
+#aboutWe_section {
+  /* padding: 0 100px; */
+  height: 26em;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#aboutWe_section > div {
+  margin: 20px 0;
+  padding: 40px;
+  color: rgba(51, 51, 51, 0.808);
+  box-shadow: 0 0 10px var(--ramade);
+}
+#aboutWe_section > div > h3 {
+  font-size: xx-large;
+  margin: 20px 0;
+}
+#aboutWe_section > div > p {
+  font-size: large;
+}
+/* .aboutWe_borderDiv {
+  margin: 70px 150px 60px 0;
+  width: 50em;
+} */
+/* -------------------------------- service_section */
+#service_section {
 }
